@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState }from "react";
 import Nav from "./Nav";
-import hogs from "../porkers_data";
+import allHogs from "../porkers_data";
 import HogsList from "./HogsList";
 
 function App() {
+	const [hogs, setHogs] = useState(allHogs)
+
+
 	return (
 		<div className="App">
 			<Nav />
